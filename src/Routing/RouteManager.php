@@ -74,6 +74,21 @@ class RouteManager
         return $this->addRoute('POST', $uri, $action);
     }
 
+    public function put(string $uri, $action)
+    {
+        return $this->addRoute('PUT', $uri, $action);
+    }
+
+    public function patch(string $uri, $action)
+    {
+        return $this->addRoute('PATCH', $uri, $action);
+    }
+
+    public function delete(string $uri, $action)
+    {
+        return $this->addRoute('DELETE', $uri, $action);
+    }
+
 
     public function loadRoutes()
     {
